@@ -5,14 +5,17 @@ import {
 	FaCss3Alt, 
 	FaJsSquare, 
   FaNode, 
-	FaNpm, 
+	FaNpm,
+  FaDatabase, 
+  FaFilePdf,
 } 
 from "react-icons/fa";
 
 import { Carousel } from "react-bootstrap"; 
-import Recipe from "../../assets/recipe.jpg";
+
 import Showboat from "../../assets/showBoat.png";
 import FaThyme from "../../assets/familyThyme.png";
+import Resumaker from "../../assets/resumaker.jpg";
 
 
 
@@ -27,7 +30,7 @@ const styles ={
       border: "none",
       borderRadius:"15px",
       padding: "2px",
-      fontSize: "12px",
+      fontSize: "15px",
     },
 
     caption: {
@@ -58,15 +61,17 @@ export default function BootstrapCarousel() {
       <Carousel.Item>
         <img
           style={styles.caption} data-bs-interval="10000"
-          src={Recipe}
+          src={Resumaker}
           alt="First slide"
         />
         <Carousel.Caption style={styles.fontstyle}>
-          <h3 style={styles.fontstyle}>Recipes App
+          <h3 style={styles.fontstyle}>Resumaker 
           <br></br>
-          Search recipes to make at home or try a random recipe!</h3>
-          <p><FaHtml5/>HTML, <FaGithub/>Git, <FaCss3Alt/>CSS, <FaJsSquare/>Javascript, 
-           </p>
+          Users can create an account & save resume templates to use later & export to PDF</h3>
+          <p><FaHtml5/>HTML, <FaGithub/>Git, <FaCss3Alt/>CSS, <FaJsSquare/>Javascript, <FaDatabase/>Mongo & Graphql <FaFilePdf/>Kendo React  
+          </p>
+          <p> 
+           Click here to see a DEMO: <a href="https://intense-atoll-83101.herokuapp.com"> Resumaker </a></p>
         </Carousel.Caption>
       </Carousel.Item>
 
