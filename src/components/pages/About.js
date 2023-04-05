@@ -1,29 +1,22 @@
+import zIndex from "@mui/material/styles/zIndex";
 import React from "react";
 
 const styles = {
   card: {
-    background: "#2c5242",
-    color: "white",
-    border: "none 5px",
     borderRadius: "15px",
-    
+    zIndex: "1",
     webkitBoxShadow: "5px 5px 15px 5px #000000", 
     boxShadow: "5px 5px 15px 5px #000000",
   },
   heading: {
     minHeight: 50,
-    lineHeight: 3.5,
+    lineHeight: 2.5,
     fontSize: "1.2rem",
-    color: "white",
     padding: "0 20px",
-    
-    border: "none 5px",
-    borderRadius: "15px",
     
   },
   content: {
-    padding: "20px",
-    
+    padding: "5px",
     border: "none 5px",
     borderRadius: "15px",
     

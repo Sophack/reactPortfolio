@@ -5,11 +5,10 @@ import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
 const styles = {
 
     footer: {
-      background: '#c9ceac',
       minHeight: 50,
       lineHeight: 3.5,
       fontSize: '1.2rem',
-      color: '#718232',
+      color: '#f4f4f2',
       padding: '20px',
       listStyle: "none",
       textDecoration: "none",
@@ -20,8 +19,8 @@ const styles = {
 
 export default function Footer() {
   return (
-    <div style={styles.footer} className="footer">
-      <footer style={styles.footer}>
+    <div className="footer">
+      <footer>
         <a style={styles.footer}
           href="https://github.com/Sophack"
           target="blank"

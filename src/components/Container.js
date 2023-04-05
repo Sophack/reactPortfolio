@@ -16,9 +16,7 @@ const styles={
       lineHeight: 1.5,
       fontSize: '1.2rem',
       margin: "0",
-      marginRight: "100px",
-      border: "pink solid 8px"
-   
+      marginRight: "100px"
 }
 
 
@@ -27,7 +25,7 @@ export default function Contain() {
     return (
       
         <> 
-    <Container style={styles}>
+    <Container className='container'>
       <Greeting/>
       <Row>
         <Header/>

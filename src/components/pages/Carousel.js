@@ -23,6 +23,8 @@ const styles ={
     carousel: {
       maxHeight: "400px",
       width: "400px",
+      display: "flex",
+      justifyContent: "center",
     },
     fontstyle:{
       background:"white",
@@ -40,15 +42,7 @@ const styles ={
       borderRadius:"15px",
 
     },
-    title:{
-      background:"transparent",
-      color:"#1b5811",
-      border: "none",
-      fontSize: "22px",
-      borderRadius: "40%",
-      paddingTop: "30px",
-    },
-
+  
 
     
 }
@@ -56,9 +50,11 @@ const styles ={
 export default function BootstrapCarousel() {
   return (
     <div id="port">
-      <h3 style={styles.title}>Portfolio</h3>
     <Carousel fade>
+      
+    <h3 style={styles.title}>Portfolio</h3>
       <Carousel.Item>
+        
         <img
           style={styles.caption} data-bs-interval="10000"
           src={Resumaker}

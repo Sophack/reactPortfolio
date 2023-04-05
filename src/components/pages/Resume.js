@@ -32,7 +32,8 @@ function Resume() {
           ))}
         </ul>
         <a href="https://sophack.github.io/resume/" className='title'>Link to full Resume</a>
-        <button onClick={updateResume}>Update Resume</button> {/* Example button for updating the resume state */}
+        <br></br>
+        <button onClick={updateResume}>Update Resume</button> {/* button for updating the resume state */}
       </div>
     </div>
   );

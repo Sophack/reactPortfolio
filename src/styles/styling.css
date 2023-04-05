@@ -1,28 +1,76 @@
 /* container styling  */
 * {
-  box-sizing: border-box;
   margin: auto;
   padding: 0px;
   -ms-font-smoothing: antialiased;
+  
+
 }
+
+.container {
+  background-image: url("../assets/backPatArt.jpg");
+  opacity: 0.9;
+  margin: auto;
+}
+
+/* header styling  */
+
+#about {
+  font-weight: 600;
+  color: #0d5323;
+  background: #a3ffb9;
+  background: -moz-linear-gradient(left, #a3ffb9 0%, #d4d4d4 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #61d17b 0%, #d4d4d4 50%, #f3f6f3 100%);
+  background: linear-gradient(to right, #c1efcc 0%, #ffffff 50%, #22b344c4 100%);
+}
+
+.card {
+  margin: 20px;
+  color: white;
+}
+
+.header {
+  text-shadow: 10px 10px 4px #ffffff;
+  min-height: 50px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #167133;
+  padding: 20px;
+  display: flex;
+  align-self: center;
+  border-radius: 10px;
+  background: #a3ffb9;
+  background: -moz-linear-gradient(left, #a3ffb9 0%, #d4d4d4 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #61d17b 0%, #d4d4d4 50%, #f3f6f3 100%);
+  background: linear-gradient(to right, #c1efcc 0%, #ffffff 50%, #22b344c4 100%);
+}
+
+.content {
+  padding: 20px;
+}
+
 
 /* greeting styling */
 button {
   padding: 0.5rem 1rem;
-  background: transparent;
   color: #1b5811;
   cursor: pointer;
   text-align: center;
-  border-radius: 40%;
-  transition: 250ms ease-in-out; 
-  transform: 150ms ease;
-  }
+  border-radius: 50px !important;
+  background-color: #8bdd7e;
+}
 
 
 
  button:hover{
-  text-shadow: 10px 10px 4px #021f0e;
-  font-size: larger;
+  box-shadow: 5px 5px 4px #074c6c;
+
+  transition: 250ms ease-in-out; 
+  transform: 150ms ease;
+  transform: rotate(360deg);
+    transition: ease-out 0.5s;
+    
+  border-radius: 50px;
 }
 
 .form {
@@ -32,8 +80,9 @@ button {
   border-radius: 40%;
   transition: 250ms ease-in-out; 
   transform: 150ms ease;
-  color: #0d542b;
-  font-weight: 600;
+  color: #edf9f2;
+  font-weight: 450;
+  font-size: large;
   text-shadow: 10px 10px 4px #cbf3dc;
   }
 
@@ -62,7 +111,6 @@ nav {
   border: none;
   padding: 1rem 2rem;
   text-decoration: none;
-  background: transparent;
   color: #8bdd7e;
   font-family: sans-serif;
   font-size: 1rem;
@@ -178,15 +226,87 @@ nav {
 }
 
 /* resume & carousel styling */
+#port {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: #a3ffb9;
+  box-shadow: 5px 5px 15px 5px #000000;
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+  background: -moz-linear-gradient(left, #a3ffb9 0%, #d4d4d4 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #61d17b 0%, #d4d4d4 50%, #f3f6f3 100%);
+  background: linear-gradient(to right, #c1efcc 0%, #ffffff 50%, #22b344c4 100%);
+}
 
 .card-body {
   text-decoration: none;
   font-size: 1.3rem;
   transition: 0.3s ease-in-out;
-  background: "transparent";
+  border: none;
 
   }
 
+#resume.card.text-center {
+  color: #1b5811;
+  background: #a3ffb9;
+  box-shadow: 5px 5px 15px 5px #000000;
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+  background: -moz-linear-gradient(left, #a3ffb9 0%, #d4d4d4 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #61d17b 0%, #d4d4d4 50%, #f3f6f3 100%);
+  background: linear-gradient(to right, #c1efcc 0%, #ffffff 50%, #22b344c4 100%);
+
+
+}  
+
+#resume.card.text-center button{
+  color: #1b5811;
+}  
+
 .title {
   color: #1b5811;
+  text-decoration: dashed;
+  
+}
+
+/* contact form styling */
+#contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #1b5811;
+  background: #a3ffb9;
+  box-shadow: 5px 5px 15px 5px #000000;
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 15px;
+  background: -moz-linear-gradient(left, #a3ffb9 0%, #d4d4d4 50%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #61d17b 0%, #d4d4d4 50%, #f3f6f3 100%);
+  background: linear-gradient(to right, #c1efcc 0%, #ffffff 50%, #22b344c4 100%);
+
+}
+
+
+/* footer styling */
+
+footer {
+  min-height: 50px;
+  line-height: 3.5;
+  font-size: 1.2rem;
+  color: #f4f4f2;
+  padding: 20px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a:hover{
+
+  transition: 250ms ease-in-out; 
+  transform: 150ms ease;
+  transform: rotate(360deg);
+    transition: ease-out 0.5s;
+    
+  border-radius: 50px;
 }

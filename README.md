@@ -47,6 +47,7 @@ Below image shows the contact form. It also shows the footer which includes icon
 ## License:
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io)
 
+[![jsDocs.io](https://img.shields.io/badge/jsDocs.io-reference-blue)](https://www.jsdocs.io/package/react-icons)
 
 ## Questions:
 - Github: [github.com/sophack](https://github.com/sophack)

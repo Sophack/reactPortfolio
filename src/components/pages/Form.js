@@ -57,7 +57,7 @@ function InputForm() {
   };
 
     return (
-      <div>
+      <div id="contactForm">
         <h2 id="contact">Contact me</h2>
         <form action="mailto:sarafnrealtor@gmail.com" method= "post"
          encType="text/plain" className="form">
