@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-import '../../styles/contact.css';
+import '../../style/contact.css';
 
 function InputForm() {
   //create state variables with empty string values (these are the fields in the form)

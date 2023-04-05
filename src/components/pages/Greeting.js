@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/styling.css';
+import '../../style/styling.css';
 
 function Greeting() {
   // Here we set two state variables for firstName and lastName using `useState`

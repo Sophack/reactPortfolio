@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/styling.css';
+import '../../style/styling.css';
 
 function Resume() {
   const [resume, setResume] = useState(

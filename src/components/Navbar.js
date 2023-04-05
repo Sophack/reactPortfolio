@@ -1,4 +1,4 @@
-import "../styles/styling.css";
+import "../style/styling.css";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 

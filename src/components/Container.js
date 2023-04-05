@@ -31,6 +31,7 @@ export default function Contain() {
         <Header/>
       <Navbar/>
         <Col>
+        <Owlbot/>
         <About/>
         <BootstrapCarousel/>
         <Resume/>
