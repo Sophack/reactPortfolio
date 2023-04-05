@@ -3,11 +3,11 @@
   box-sizing: border-box;
   margin: auto;
   padding: 0px;
+  -ms-font-smoothing: antialiased;
 }
 
 /* greeting styling */
 button {
-  display: inline-block;
   padding: 0.5rem 1rem;
   background: transparent;
   color: #1b5811;
@@ -18,8 +18,10 @@ button {
   transform: 150ms ease;
   }
 
+
+
  button:hover{
-  text-shadow: 10px 10px 4px #041a0d;
+  text-shadow: 10px 10px 4px #021f0e;
   font-size: larger;
 }
 
@@ -57,10 +59,8 @@ nav {
 }
 
 #navbar a {
-  display: inline-block;
   border: none;
   padding: 1rem 2rem;
-  margin: 0;
   text-decoration: none;
   background: transparent;
   color: #8bdd7e;
@@ -86,15 +86,27 @@ nav {
   transform: scale(0.99);
 }
 
-.burger-menu {
-    height: 100%;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
+#darkMode {
+  height: 5vmin;
+  pointer-events: cursor;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  #darkMode {
+    animation: darkMode-spin infinite 10s linear;
+  }
+}
+
+  @keyframes darkMode-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
 
 .burger-bar {
     width: 4em;
@@ -103,11 +115,11 @@ nav {
     border-radius: 0.5em;
 }
 
+
 .menu {
     width: 50%;
     height: 100vh;
     background-color: rgb(154, 181,240);
-    position: absolute;
     top: 0;
     z-index: -1;
 }
@@ -117,7 +129,7 @@ nav {
   height: 1vh;
   border-radius: 40%;
   background-color: rgb(57, 218, 236);
-  margin: 5px;
+
 }
 .hidden {
     display: none;
@@ -157,7 +169,6 @@ nav {
   .hidden {
     display: block;
     flex-direction: column;
-    margin-right: 150px;
     padding-top: 10px;
   }
 
@@ -178,6 +189,4 @@ nav {
 
 .title {
   color: #1b5811;
-  margin: 10px 0px 0px 10px;
-  display: flex;
 }

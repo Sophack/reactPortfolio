@@ -22,7 +22,7 @@ import Resumaker from "../../assets/resumaker.jpg";
 const styles ={
     carousel: {
       maxHeight: "400px",
-      width: "400px"
+      width: "400px",
     },
     fontstyle:{
       background:"white",
@@ -37,7 +37,7 @@ const styles ={
       height: "600px",
       display: "tableCaption",
       padding: "50px",
-      display: "flex",
+      borderRadius:"15px",
 
     },
     title:{

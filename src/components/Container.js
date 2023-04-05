@@ -11,11 +11,14 @@ import BootstrapCarousel from './pages/Carousel';
 import Greeting from './pages/Greeting';
 
 const styles={ 
-    background: '#c9ceac',
+    background: '#beecd1',
       minHeight: 50,
       lineHeight: 1.5,
       fontSize: '1.2rem',
-      color: '#718232',
+      margin: "0",
+      marginRight: "100px",
+      border: "pink solid 8px"
+   
 }
 
 
@@ -23,7 +26,7 @@ export default function Contain() {
 
     return (
       
-        <div> 
+        <> 
     <Container style={styles}>
       <Greeting/>
       <Row>
@@ -39,6 +42,6 @@ export default function Contain() {
         <Footer/>
     </Container>
     
-    </div>
+    </>
   );
 }
