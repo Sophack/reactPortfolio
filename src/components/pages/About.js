@@ -40,7 +40,7 @@ function About() {
           {" "}
           As a passionate developer I am always looking for ways to make things
           more efficient. I am an experienced Real Estate agent who loves to
-          connect with people and network. I a driven & self-motivated individual & I bring my work ethic and
+          connect with people and network. I am driven & self-motivated individual & I bring my work ethic and
           friendliness with me to complete projects and meet deadlines. 
 
         </ul>
